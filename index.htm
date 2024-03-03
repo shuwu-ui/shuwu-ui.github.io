@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta name="description" content="Shawn AI-免费公益AI">
+    <meta name="keywords" content="人工智能, ChatGPT, Shawn AI, AI服务, 免费AI, 免费GPT4, AI">
+    <script src="https://kit.fontawesome.com/c80a010865.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Shawn AI</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* 使用Roboto字体 */
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .link-block:hover, .container:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .link-block button:hover {
+            color: red;
+        }
+
+        header {
+            position: relative;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            background-image: url('gpt4.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .title {
+            font-size: 2em;
+            text-shadow: 3px -2px 10px rgb(2 2 2 / 50%);
+            display: inline-block;
+            padding: 30px 20px;
+            background-color: transparent;
+            border-radius: 10px;
+            -webkit-text-stroke: 0.8px white;
+        }
+
+        .一言 {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Add smooth transition */
+        }
+
+        .container2 {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #808080;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: black;
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif; /* 使用Roboto字体 */
+        }
+
+        p {
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+        .link-block {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            gap: 10px;
+            justify-content: space-between; /* 使元素在水平方向上分散对齐 */
+            box-shadow: 5px 5px 10px gray; /* 添加阴影 */
+        }
+
+        .link-block img {
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .link-block span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .link-block button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: #007bff;
+            float: right; /* 使元素在右边浮动 */
+        }
+        #hitokotoContainer {
+            font-size: 18px;
+            color: #333;
+            font-family: 'Pacifico', cursive; /* 使用Pacifico字体 */
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="title">Shawn AI</h1>
+</header>
+    <div class="一言">
+        <center>
+            <strong>
+                <h3 id="hitokotoContainer"></h3>
+            </strong>
+        </center>
+    </div>
+    <div class="container2">
+        <h2 style="color: white;">请选择您需要的AI服务：</h2>
+        <br>
+    	<div class="link-block">
+            <a href="https://chat-free.site/" target="_blank">
+                <img src="chatgpt.svg" alt="copilot">
+            </a>
+            <a href="https://chat-free.site/" style="text-decoration: none; color: inherit;" target="_blank">
+                <h3>ChatGPT 3.5</h3></a>
+            <button type="button">
+                <a href="https://chat-free.site/" style="text-decoration: none; color: inherit;" target="_blank">
+                    <i class="fa-solid fa-comment"></i>
+                </a>
+            </button>
+        </div>
+        <br>
+        <div class="link-block">
+            <a href="https://gpt4.chat-free.icu/" target="_blank">
+                <img src="gpt4.svg" alt="copilot">
+            </a>
+            <a href="https://gpt4.chat-free.icu/" style="text-decoration: none; color: inherit;" target="_blank">
+                <h3>ChatGPT 4.0</h3></a>
+            <button type="button">
+                <a href="https://gpt4.chat-free.icu/" style="text-decoration: none; color: inherit;" target="_blank">
+                    <i class="fa-solid fa-comment"></i>
+                </a>
+            </button>
+        </div>
+        <br>
+        <div class="link-block">
+            <a href="https://shawn-ai.asia/" target="_blank">
+                <img src="https://www.deepseek.com/favicon.ico" alt="copilot">
+            </a>
+            <a href="https://shawn-ai.asia/" style="text-decoration: none; color: inherit; " target="_blank">
+                <h3>DeepSeek</h3>
+            </a>
+            <button type="button">
+                <a href="https://shawn-ai.asia/" style="text-decoration: none; color: inherit; " target="_blank">
+                    <i class="fa-solid fa-comment"></i>
+                </a>
+            </button>
+        </div>
+        <br>
+        <div class="link-block">
+                <a href="https://gemini.chat-free.site/" target="_blank">
+                    <img src="https://geminiapk.net/wp-content/uploads/2024/02/gemini.webp" alt="copilot" />
+                </a>
+                <a href="https://gemini.chat-free.site/" style="text-decoration: none; color: inherit;" target="_blank">
+                    <h3>Gemini(需要科学上网)</h3>
+                </a>
+                <button type="button">
+                    <a href="https://gemini.chat-free.site/" style="text-decoration: none; color: inherit;" target="_blank">
+                        <i class="fa-solid fa-comment"></i>
+                    </a>
+                </button>
+         </div>
+        <br>	
+        <br>
+    </div>
+    <div class="container">
+        <center>
+            <strong>
+                <h3>成立：2023年12月15日
+                    <br><br>
+                    联系：
+                    <a href="mailto:shiwu8936@gmail.com" style="color:blue;">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <br>
+                    <br>
+                    官方Q群：
+                    <a href="https://qm.qq.com/q/f1A1tfdEz0" target="_blank" title="QQ" style="color:blue;">
+                        <i class="fa-brands fa-qq"></i>
+                    </a>
+                </h3>
+                <h3>友情链接:
+                    <scan>
+                        <a href="https://lhygpt.github.io/" target="_blank" style="color:blue;">Bosco AI</a>
+                        &nbsp;&nbsp;
+                        <a href="https://ecylt.top/" target="_blank" style="color:blue;">二次元论坛</a>
+                    </scan>
+                </h3> 
+            </strong>
+        </center>
+    </div>
+<footer>
+    <p style="text-align: center; color: #666; font-size: 12px;">
+        &copy; 2023 <a href="https://chat-free.icu/" style="color: blue" target="_blank">Shawn AI.</a>
+    </p>
+</footer>
+    <script>
+        fetch('https://api.xygeng.cn/openapi/one')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                var hitokotoContainer = document.getElementById('hitokotoContainer');
+                if (data && data.code === 200 && data.data && data.data.content) {
+                    let displayText = data.data.content.trim().replace(/\n/g, ' ');
+                    if (data.data.origin.includes('《') && data.data.origin.includes('》')) {
+                        displayText += ` --- ${data.data.origin}`;
+                    } else {
+                        displayText += ` --- 《${data.data.origin}》`;
+                    }
+
+                    hitokotoContainer.textContent = '每日一言： ' + displayText;
+                } else {
+                    throw new Error('无效的响应格式');
+                }
+            })
+            .catch(error => {
+                console.error('获取数据失败:', error);
+            });
+    </script>
+</body>
+</html>
